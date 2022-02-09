@@ -15,9 +15,11 @@ Deep neural networks are increasingly deployed for scene analytics, including to
 - Requirements
 
   Torch 1.7.1, APEX 0.1, and torchvision 0.8.2.
-- Data Preparation
 
-  Download [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset) dataset, and make sure it have a structure like following:
+- Data Preparation
+  We have provided the labels for sensitive attributes (Gender, Age, Race) of the RAF-DB dataset. 
+
+  Download [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset) dataset, and make sure it is saved in the datasets folder like this:
  
 ```
 - datasets/raf-basic/
@@ -35,23 +37,19 @@ python train_raf-db.py
 
 - Training adversary network
 ```
-python train_raf-db_adv.py --checkpoint <unprotected network>.pth 
+python train_raf-db_adv.py --checkpoint <unprotected network>.pth --attribute [age, gender]
 ```
 
 - Training adversary network
 ```
-python train_raf-db_adv.py --checkpoint *.pth --checkpoint <unprotected network>.pth --adversary <adversary network>.pth
+python train_raf-db_adv.py --checkpoint *.pth --checkpoint <unprotected network>.pth --adversary <adversary network>.pth --attribute [age, gender]
 ```
-
-
-
-
 
 # Citation
 If you use the sample code or part of it in your research, please cite the following:
 
 ```
-@ARTICLE{2021arXiv210310189S,
+@ARTICLE{PrivacyPreserving_Pipeline_Li_Cavallaro_2022,
        author = {{Li}, C.Y. and {Cavallaro}, A.},
         title = "{Training privacy-preserving video analytics pipelines by suppressing features that reveal information about private attributes}",
       journal = {International Conference on Acoustics, Speech, and Signal Processing},
