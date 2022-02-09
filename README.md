@@ -1,9 +1,8 @@
 # Training privacy-preserving video analytics pipelines by suppressing features that reveal information about private attributes
 <p align="center">
-Chau Yi Li* and Andrea CavallaroQ
-Queen Mary University of London
-London, United Kingdom
-*chauyi.li@qmul.ac.uk
+Chau Yi Li* and Andrea Cavallaro</br>
+Queen Mary University of London, London, United Kingdom</br>
+*chauyi.li@qmul.ac.uk</br>
 </p>
 
 
@@ -61,5 +60,3 @@ If you use the sample code or part of it in your research, please cite the follo
 }
 ```
 
-## License
-ARM is available under the MIT license. See the LICENSE file for more info.
