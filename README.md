@@ -1,8 +1,12 @@
 # Training privacy-preserving video analytics pipelines by suppressing features that reveal information about private attributes
-                                                   Chau Yi Li* and Andrea CavallaroQ
-                                                   Queen Mary University of London
-                                                         London, United Kingdom
-                                                *chauyi.li@qmul.ac.uk
+<p align="center">
+Chau Yi Li* and Andrea CavallaroQ
+Queen Mary University of London
+London, United Kingdom
+*chauyi.li@qmul.ac.uk
+</p>
+
+
 
 
 ## Abstract
