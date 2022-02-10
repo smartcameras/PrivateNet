@@ -31,17 +31,17 @@ Deep neural networks are increasingly deployed for scene analytics, including to
              test_0001_aligned.jpg
              ...
 ```
-- Training original unprotected network
+- Training original emotion recoginition network 
 ```
 python train_raf-db.py
 ```
 
-- Training adversary network
+- Training adversary network that infers the private attribuet from the original network
 ```
 python train_raf-db_adv.py --checkpoint <unprotected network>.pth --attribute [age, gender]
 ```
 
-- Training privacy-preserving network
+- Training the proposed privacy-preserving network 
 ```
 python train_raf-db_adv.py --checkpoint *.pth --checkpoint <unprotected network>.pth --adversary <adversary network>.pth --attribute [age, gender]
 ```
