@@ -43,7 +43,7 @@ python train_raf-db_adv.py --checkpoint <unprotected network>.pth --attribute [a
 
 - Training the proposed privacy-preserving network 
 ```
-python train_raf-db_privacy.py --checkpoint *.pth --checkpoint <unprotected network>.pth --adversary <adversary network>.pth --attribute [age, gender]
+python train_raf-db_privacy.py --checkpoint <unprotected network>.pth --adversary <adversary network>.pth --attribute [age, gender]
 ```
 
 # Citation
