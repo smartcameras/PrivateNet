@@ -17,14 +17,18 @@ Deep neural networks are increasingly deployed for scene analytics, including to
   Torch 1.7.1, APEX 0.1, and torchvision 0.8.2.
 
 - Data Preparation
-- 
-  We have provided the labels for sensitive attributes (Gender, Age, Race) of the RAF-DB dataset. 
+
+  We have provided the labels for sensitive attributes (Gender, Age) of the RAF-DB dataset. 
 
   Download [RAF-DB](http://www.whdeng.cn/RAF/model1.html#dataset) dataset, and make sure it is saved in the datasets folder like this:
  
 ```
 - datasets/raf-basic/
          EmoLabel/
+             list_patition_label.txt
+         AgeLabel/
+             list_patition_label.txt
+         GenderLabel/
              list_patition_label.txt
          Image/aligned/
 	     train_00001_aligned.jpg
