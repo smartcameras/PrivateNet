@@ -45,11 +45,6 @@ python train_raf-db.py
 python train_raf-db_adv.py --checkpoint <unprotected network>.pth --attribute [age, gender]
 ```
 
-- Training the proposed privacy-preserving network 
-```
-python train_raf-db_privacy.py --checkpoint <unprotected network>.pth --adversary <adversary network>.pth --attribute [age, gender]
-```
-
 # Citation
 If you use the sample code or part of it in your research, please cite the following:
 
